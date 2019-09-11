@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Flex</title>
+		<style type="text/css">
+			.boxall{
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.items{
+				height:20px;
+				width: 20px;
+				background: #000;
+				border-radius: 50%;
+				display: block;
+			}
+			.box{
+				width: 60px;
+				height: 60px;
+				border:1px solid #31B0D5;
+				padding:5px;
+				border-radius: 3px;
+				margin:0 5px 0 0;
+			}
+			.one-1{
+				display: flex;
+			}
+			.one-2{
+				display: flex;
+				justify-content: center;
+			}
+			.one-3{
+				display: flex;
+				flex-direction: row-reverse;
+			}
+			.one-4{
+				display: flex;
+				align-items: center;
+			}
+			.one-5{
+				display: flex;
+				align-items: center;
+				justify-content:center;
+			}
+			.one-6{
+				display: flex;
+				flex-direction:row-reverse;
+				align-items: center;
+			}
+			.one-7{
+				display: flex;
+				flex-direction: column-reverse;
+			}
+			.one-8{
+				display: flex;
+				flex-direction:column-reverse;
+				align-items:center;
+			}
+			.one-9{
+				display: flex;
+				flex-direction: row-reverse;
+				align-items: flex-end;
+			}
+			.two-top{
+				display: flex;
+				justify-content: space-between;
+			}
+			.two-left{
+				display: flex;
+				flex-direction:column;
+				justify-content: space-between;
+			}
+			.two-bottom{
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+			}
+			.two-right{
+				display: flex;
+				flex-direction:column;
+				justify-content: space-between;
+				align-items: flex-end;
+			}
+			.two-left-1{
+				display: flex;
+			}
+			.two-left-1 span:nth-child(2),
+			.two-right-2 span:nth-child(2),
+			.two-left-2 span:nth-child(2),
+			.two-right-1 span:nth-child(2){
+				align-self: center;
+			}
+			.two-left-2{
+				display: flex;
+				flex-direction: row-reverse;
+			}
+			.two-right-1{
+				display: flex;
+				flex-direction: column-reverse;
+			}
+			.two-right-2{
+				display: flex;
+				flex-direction:row-reverse;
+				align-items:flex-end;
+			}
+			.two-opposite-1{
+				display: flex;
+				justify-content:space-between;
+			}
+			.two-opposite-1 span:nth-child(2),
+			.two-opposite-2 span:nth-child(2){
+				align-self: flex-end;
+			}
+			.two-opposite-2{
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content:space-between;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h2>一个点的筛子</h2>
+			<div class="boxall">
+				<div class="box one-1">
+					<span class="items"></span>
+				</div>
+				<div class="box one-2">
+					<span class="items"></span>
+				</div>
+				<div class="box one-3">
+					<span class="items"></span>
+				</div>
+				<div class="box one-4">
+					<span class="items"></span>
+				</div>
+				<div class="box one-5">
+					<span class="items"></span>
+				</div>
+				<div class="box one-6">
+					<span class="items"></span>
+				</div>
+				<div class="box one-7">
+					<span class="items"></span>
+				</div>
+				<div class="box one-8">
+					<span class="items"></span>
+				</div>
+				<div class="box one-9">
+					<span class="items"></span>
+				</div>
+			</div>
+			
+			<h2> 两个点子的筛子</h2>
+			<div class="boxall">
+				<div class="box two-top">
+					<span class="items"></span>
+					<span class="items"></span>
+				</div>
+				<div class="box two-left">
+					<span class="items"></span>
+					<span class="items"></span>
+				</div>
+				<div class="box two-bottom">
+					<span class="items"></span>
+					<span class="items"></span>
+				</div>
+				<div class="box two-right">
+					<span class="items"></span>
+					<span class="items"></span>
+				</div>
+				<div class="box two-left-1">
+					<span class="items"></span>
+					<span class="items"></span>
+				</div>
+				<div class="box two-left-2">
+					<span class="items"></span>
+					<span class="items"></span>
+				</div>
+				<div class="box two-right-1">
+					<span class="items"></span>
+					<span class="items"></span>
+				</div>
+				<div class="box two-right-2">
+					<span class="items"></span>
+					<span class="items"></span>
+				</div>
+				
+				<div class="box two-opposite-1">
+					<span class="items"></span>
+					<span class="items"></span>
+				</div>
+				<div class="box two-opposite-2">
+					<span class="items"></span>
+					<span class="items"></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
