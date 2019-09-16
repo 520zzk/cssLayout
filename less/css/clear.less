@@ -1,0 +1,19 @@
+
+.br(@radius :3px){
+	border-radius: @radius;
+}
+.br(7px){
+	border-radius:7px;	//相同属性会重叠，按照先来后到的原则
+}
+.br(){
+	border-radius: 4px;
+}
+.a{
+	.br(6px);
+}
+.b{
+	.br(7px);
+}
+.c{
+	.br();
+}

@@ -1,0 +1,54 @@
+.box {
+  height: 300px;
+  width: 500px;
+  background: pink;
+}
+div {
+  color: red;
+}
+h1 {
+  color: blue;
+  padding: 10px;
+  background: #000;
+  margin: 10px;
+}
+/* 实验匹配规则*/
+.public {
+  background: red;
+}
+._001 {
+  background: red;
+  float: right;
+  margin: 50px;
+  display: block;
+  height: 300px;
+}
+/*
+* .abc(@w:2){
+	width: @w *1px;
+}
+.abc(7px){
+	border-radius: 7px;
+}
+.abc(){
+	border:1px solid salmon;
+	z-index: 111;
+}*/
+._002 {
+  width: 2px;
+  border: 1px solid salmon;
+  z-index: 111;
+  /*如果设置的默认参数,在匹配的同时也会同样考虑进去
+	* .abc();  -》 相当于【'abc()','abc(@w:2)】
+	* */
+}
+._003 {
+  width: 7px;
+  border-radius: 7px;
+  /*
+	* .abc(7px); -> 相当于 abc(7px)、abc(@w:2)
+	* */
+}
+._004 {
+  width: 5px;
+}
