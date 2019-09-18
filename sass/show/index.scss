@@ -1,0 +1,97 @@
+$h:100px;
+$w:200px;
+$top:top;
+@import 'init.scss';
+#box{
+	height:$h;
+	width:$w;
+	#box01{
+		margin-#{$top}:100px;
+	}
+}
+ 
+#box02{
+	$w2:500px;
+	width:$w2;
+}
+#box03{
+	width:100px;
+	&:hover{
+		background: red;
+	}
+} 
+#box04{
+	h1,h2,h3{
+		 margin-bottom: .8em;
+	}
+}
+nav, div {
+  a {color: blue}
+}
+
+.box05{
+	+.box05_child{
+		ul{
+			>li{
+				height:60px;
+				
+			}
+			li +img{
+				width:100%;
+			}
+		}
+		~span{
+			display: block;
+		}
+	}
+	
+}
+
+.box06{
+	border:{
+		left:2px;
+		right:10px;
+		style:solid;
+	}
+}
+
+//我这个不会显示出来
+/*我是可以显示出来的*/
+@mixin border_radius{
+	-moz-border-radius: 5px;
+	 -webkit-border-radius: 5px;
+	 border-radius: 5px;
+	 div{
+		 width:100px;
+	 }
+}
+.box07{
+	@include border_radius;
+}
+
+@mixin font($color,$size){
+	color:$color;
+	font-size:$size;
+}
+.box08{
+	@include font(red,20px);
+}
+.box09{
+	@include font($size:30px,$color:yellow )
+}
+@mixin border( $size:1px,$style:solid,$color:black){
+	border:$size $style $color;
+}
+.box10{
+	@include border();
+}
+.box11{
+	width:100px;
+	height:50px;
+	display: block;
+	background: #000;
+}
+.box12{
+	border:1px solid red;
+	@extend .box11;
+}

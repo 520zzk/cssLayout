@@ -1,0 +1,93 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li,
+pre,
+fieldset, lengend, button, input, textarea,
+th, td {
+  /* table elements 表格元素 */
+  margin: 0;
+  padding: 0;
+}
+
+#box {
+  height: 100px;
+  width: 200px;
+}
+
+#box #box01 {
+  margin-top: 100px;
+}
+
+#box02 {
+  width: 500px;
+}
+
+#box03 {
+  width: 100px;
+}
+
+#box03:hover {
+  background: red;
+}
+
+#box04 h1, #box04 h2, #box04 h3 {
+  margin-bottom: .8em;
+}
+
+nav a, div a {
+  color: blue;
+}
+
+.box05 + .box05_child ul > li {
+  height: 60px;
+}
+
+.box05 + .box05_child ul li + img {
+  width: 100%;
+}
+
+.box05 + .box05_child ~ span {
+  display: block;
+}
+
+.box06 {
+  border-left: 2px;
+  border-right: 10px;
+  border-style: solid;
+}
+
+/*我是可以显示出来的*/
+.box07 {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.box07 div {
+  width: 100px;
+}
+
+.box08 {
+  color: red;
+  font-size: 20px;
+}
+
+.box09 {
+  color: yellow;
+  font-size: 30px;
+}
+
+.box10 {
+  border: 1px solid black;
+}
+
+.box11, .box12 {
+  width: 100px;
+  height: 50px;
+  display: block;
+  background: #000;
+}
+
+.box12 {
+  border: 1px solid red;
+}
